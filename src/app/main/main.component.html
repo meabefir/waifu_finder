@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-center">
+    <app-sfw [(imgUrl)]="imgUrl"></app-sfw>
+    <app-nsfw [(imgUrl)]="imgUrl"></app-nsfw>
+</div>
+
+<div *ngIf="imgUrl != ''">
+    <img src="{{imgUrl}}" class="img-thumbnail">
+</div>

@@ -1,0 +1,8 @@
+<h2>NSFW</h2>
+<ul class="list-group">
+    <li *ngFor="let cat of categories" class="list-group-item">
+        <button [class.btn-danger]="cat === selectedCategory" (click)="selectCategory(cat)" type="button" class="btn btn-primary">{{cat}}</button>
+    </li>
+  </ul>
+
+  <button (click)="getWaifu()" type="button" class="btn btn-warning">Get Waifu</button>
